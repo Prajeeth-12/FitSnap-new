@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary:#1E3A8A; /* Dark Blue */
+  --teal:#14B8A6;    /* Teal */
+  --bg:#0B1020;
+}
+
+html, body{
+  @apply bg-[#0B1020] text-white;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji','Segoe UI Emoji';
+}
+
+.btn-primary{
+  @apply px-5 py-3 rounded-xl font-semibold bg-teal text-black hover:opacity-90 transition;
+}
+.card{
+  @apply bg-[#111a33] border border-[#1b264b] rounded-2xl shadow-xl;
+}
+
+/* Gradient page background */
+.bg-gradient{
+  background: radial-gradient(1200px 600px at -5% -10%, rgba(20,184,166,0.25) 0%, rgba(20,184,166,0.05) 40%, transparent 60%),
+              radial-gradient(1000px 700px at 120% -10%, rgba(30,58,138,0.25) 0%, rgba(30,58,138,0.05) 40%, transparent 60%),
+              #0B1020;
+}
